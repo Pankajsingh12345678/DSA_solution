@@ -1,1 +1,83 @@
 # DSA_solution
+
+#Solution--1 
+
+public class Question1 {
+    public static void main(String[] args) {
+        int x = 5, y = 3, z;
+        if (x > y) {
+            if (y > 0) {
+                z = x / y;  // 5 / 3 = 1 (integer division)
+            } else {
+                z = x * y;
+            }
+        } else {
+            z = 0;
+        }
+        System.out.println(z); 
+    }
+}
+
+#Output-- (b) 1
+
+#Solution--2
+
+public class Question2 {
+    public static void main(String[] args) {
+        int x = 5;
+        if (x > 0 && x % 2 == 1) {
+            System.out.println("Positive odd");
+        } else {
+            System.out.println("Other");
+        }
+    }
+}
+
+ #Output-- (a) x > 0 AND x % 2 = 1
+
+
+#Soution--3
+
+public class Question3 {
+    public static void main(String[] args) {
+        int n = 2;
+        switch (n) {
+            case 1:
+                System.out.println("One");
+                break;
+            case 2:
+                n = n + 1; 
+                System.out.println("Two");
+                
+            case 3:
+                System.out.println("Three");
+                
+            default:
+                System.out.println("Other");
+        }
+    }
+}
+
+#Output-- (b)
+Two  
+Three  
+Other
+
+#Solution--5
+
+public class Question5 {
+    public static void main(String[] args) {
+        int score = 85;
+        if (score >= 90) {
+            System.out.println("A");
+        } else if (score >= 80) {
+            System.out.println("B");
+        } else {
+            System.out.println("C");
+        }
+    }
+}
+
+#Output-- (c) >=
+
+
