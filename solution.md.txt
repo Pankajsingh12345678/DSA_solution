@@ -78,5 +78,324 @@ public class Question5 {
 
 Output-- (c) >=
 
+#Solution --6
+
+public class Q6 {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 1; i <= 5; i++) {
+            sum = sum + i;
+        }
+        System.out.println(sum);  
+    }
+}
+
+Output -- (b)  15
+
+#Solution --7
+
+public class Q7 {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= i; j++) {
+                sum = sum + j;
+            }
+        }
+        System.out.println(sum);  
+    }
+}
+
+Output -- (b) 10
+
+#Solution --8
+
+public class Q8 {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            if (i == 3) {
+                continue;
+            }
+            System.out.print(i + " ");  
+        }
+    }
+}
+
+Output -- (b) continue
+
+#Solution -- 9
+
+public class Q9 {
+    public static void main(String[] args) {
+        int value = 2;
+        int sum = 0;
+        while (value <= 10) {
+            sum += value;
+            value += 2;
+        }
+        System.out.println(sum);  
+    }
+}
+
+
+Output (a) 30
+
+#Solution -- 10
+
+public class Q10 {
+    public static void main(String[] args) {
+        int count = 0;
+        for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 2; j++) {
+                count++;
+            }
+        }
+        System.out.println(count);  
+    }
+}
+
+Output -- (c) 6
+
+#Solution --11
+
+public class Q11 {
+    public static void main(String[] args) {
+        int x = 5, y = 3;
+        int z = x + y * x - 2;
+        System.out.println(z); 
+    }
+}
+
+Output -- (a) 18
+
+#Solution --12
+
+public class Q12 {
+    public static void main(String[] args) {
+        int x = 11, y = 4;
+        int result = (x - y + 121) % x;
+        System.out.println(result);  
+    }
+}
+
+
+Output --(c) 7
+
+#Solution --13
+
+public class Q13 {
+    public static void main(String[] args) {
+        int x = 10, y = 4;
+        int z = x * (x - y) % y / x;
+        System.out.println(z); 
+    }
+}
+
+Output --(d) 0
+
+#Solution --14
+
+public class Q14 {
+    public static void main(String[] args) {
+        int a = 2, b = 5;
+        int c = (a + b) * (b - a);
+        System.out.println(c);  
+    }
+}
+
+
+Output --(a) 21
+
+#Solution --15
+
+public class Q15 {
+    public static void main(String[] args) {
+        int x = 8, y = 3;
+        int z = x % y * 2;
+        System.out.println(z);  
+    }
+}
+
+Output --(b) 4
+
+
+
+
+
+
+# (RECURSICE FUNNCTIION) --
+
+# Solution --1
+
+public class Main {
+    static int sum(int n) {
+        if (n == 1)
+            return 1;
+        return n + sum(n - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sum(5));
+    }
+}
+
+
+# Output -- 15
+
+#Solution --2
+
+public class Main {
+    static int mystery(int a, int b) {
+        if (b == 0)
+            return 0;
+        return a + mystery(a, b - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(mystery(3, 4));
+    }
+}
+
+Output -- 12
+
+#Solution --3
+
+public class Main {
+    static int f(int n) {
+        if (n == 0)
+            return 0;
+        else
+            return n + f(n - 2);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(f(6));
+    }
+}
+
+# Output -- 12
+
+#Solution --4
+
+public class Main {
+    static void fun(int x) {
+        if (x == 0)
+            return;
+        fun(x - 1);
+        System.out.println(x);
+    }
+
+    public static void main(String[] args) {
+        fun(3);
+    }
+}
+
+Output -- 1,2,3
+
+#Solution --5
+
+public class Main {
+    static int fact(int n) {
+        if (n == 0)
+            return 1;
+        return n * fact(n - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(fact(4));
+    }
+}
+
+# Output -- 24
+
+#Solution --6
+
+public class Main {
+    static int fib(int n) {
+        if (n == 0)
+            return 0;
+        else if (n == 1)
+            return 1;
+        return fib(n - 1) + fib(n - 2);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(fib(6));
+    }
+}
+
+# Output -- 8  (0, 1, 1, 2, 3, 5, 8)
+
+#Solution --7
+
+public class Main {
+    static int fun(int n) {
+        if (n <= 1)
+            return n;
+        return fun(n - 1) + fun(n - 3);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(fun(5));
+    }
+}
+
+# Output -- 16
+
+#Solution --8
+
+public class Main {
+    static int count = 0;
+
+    static void fun(int n) {
+        count++;
+        if (n == 0)
+            return;
+        fun(n - 1);
+        fun(n - 1);
+    }
+
+    public static void main(String[] args) {
+        fun(3);
+        System.out.println("Total recursive calls: " + count);
+    }
+}
+
+Output --15
+
+#Solution --9
+
+public class Main {
+    static int sumDigits(int n) {
+        if (n == 0)
+            return 0;
+        return (n % 10) + sumDigits(n / 10);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sumDigits(1234));
+    }
+}
+
+Output --10
+
+#Solution --10
+
+public class Main {
+    static void reversePrint(int n) {
+        if (n == 0)
+            return;
+        System.out.println(n);
+        reversePrint(n - 1);
+    }
+
+    public static void main(String[] args) {
+        reversePrint(3);
+    }
+}
+
+Output --3,2,1
+
+
 
 
