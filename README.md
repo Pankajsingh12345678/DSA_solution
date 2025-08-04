@@ -1,6 +1,6 @@
 # DSA_solution
 
-#Solution--1 
+### Solution--1 
 
 public class Question1 {
     public static void main(String[] args) {
@@ -17,11 +17,10 @@ public class Question1 {
         System.out.println(z); 
     }
 }
-
-#Output-- (b) 1
+Output-- (b) 1
 
 #Solution--2
-
+```
 public class Question2 {
     public static void main(String[] args) {
         int x = 5;
@@ -34,9 +33,9 @@ public class Question2 {
 }
 
  #Output-- (a) x > 0 AND x % 2 = 1
+```
 
-
-#Soution--3
+### Soution--3
 
 public class Question3 {
     public static void main(String[] args) {
@@ -56,13 +55,13 @@ public class Question3 {
     }
 }
 
-#Output-- (b)
+Output-- (b)
 Two  
 Three  
 Other
 
 #Solution--5
-
+```
 public class Question5 {
     public static void main(String[] args) {
         int score = 85;
@@ -77,9 +76,9 @@ public class Question5 {
 }
 
 #Output-- (c) >=
-
-#Solution --6
-
+```
+### Solution --6
+```
 public class Q6 {
     public static void main(String[] args) {
         int sum = 0;
@@ -91,9 +90,9 @@ public class Q6 {
 }
 
 Output -- (b)  15
-
-#Solution --7
-
+```
+### Solution --7
+```
 public class Q7 {
     public static void main(String[] args) {
         int sum = 0;
@@ -107,9 +106,9 @@ public class Q7 {
 }
 
 Output -- (b) 10
-
-#Solution --8
-
+```
+### Solution --8
+```
 public class Q8 {
     public static void main(String[] args) {
         for (int i = 1; i <= 5; i++) {
@@ -122,9 +121,9 @@ public class Q8 {
 }
 
 Output -- (b) continue
-
-#Solution -- 9
-
+```
+### Solution -- 9
+```
 public class Q9 {
     public static void main(String[] args) {
         int value = 2;
@@ -139,9 +138,9 @@ public class Q9 {
 
 
 Output (a) 30
-
-#Solution -- 10
-
+```
+###Solution -- 10
+```
 public class Q10 {
     public static void main(String[] args) {
         int count = 0;
@@ -155,9 +154,9 @@ public class Q10 {
 }
 
 Output -- (c) 6
-
-#Solution --11
-
+```
+### Solution --11
+```
 public class Q11 {
     public static void main(String[] args) {
         int x = 5, y = 3;
@@ -167,9 +166,9 @@ public class Q11 {
 }
 
 Output -- (a) 18
-
-#Solution --12
-
+```
+### Solution --12
+```
 public class Q12 {
     public static void main(String[] args) {
         int x = 11, y = 4;
@@ -180,9 +179,9 @@ public class Q12 {
 
 
 Output --(c) 7
-
-#Solution --13
-
+```
+### Solution --13
+```
 public class Q13 {
     public static void main(String[] args) {
         int x = 10, y = 4;
@@ -192,9 +191,9 @@ public class Q13 {
 }
 
 Output --(d) 0
-
-#Solution --14
-
+```
+#### Solution --14
+```
 public class Q14 {
     public static void main(String[] args) {
         int a = 2, b = 5;
@@ -205,9 +204,9 @@ public class Q14 {
 
 
 Output --(a) 21
-
-#Solution --15
-
+```
+#### Solution --15
+```
 public class Q15 {
     public static void main(String[] args) {
         int x = 8, y = 3;
@@ -217,13 +216,13 @@ public class Q15 {
 }
 
 Output --(b) 4
+```
 
 
+### (RECURSICE FUNNCTIION) --
 
-# (RECURSICE FUNNCTIION) --
-
-# Solution --1
-
+### Solution --1
+```
 public class Main {
     static int sum(int n) {
         if (n == 1)
@@ -237,9 +236,9 @@ public class Main {
 
 
 # Output -- 15
-
-#Solution --2
-
+````
+# Solution --2
+```
 public class Main {
     static int mystery(int a, int b) {
         if (b == 0)
@@ -252,9 +251,9 @@ public class Main {
 }
 
 Output -- 12
-
-#Solution --3
-
+```
+# Solution --3
+```
 public class Main {
     static int f(int n) {
         if (n == 0)
@@ -268,9 +267,9 @@ public class Main {
 }
 
 # Output -- 12
-
-#Solution --4
-
+```
+# Solution --4
+```
 public class Main {
     static void fun(int x) {
         if (x == 0)
@@ -284,9 +283,9 @@ public class Main {
 }
 
 Output -- 1,2,3
-
-#Solution --5
-
+```
+# Solution --5
+```
 public class Main {
     static int fact(int n) {
         if (n == 0)
@@ -299,9 +298,9 @@ public class Main {
 }
 
 # Output -- 24
-
-#Solution --6
-
+```
+# Solution --6
+```
 public class Main {
     static int fib(int n) {
         if (n == 0)
@@ -316,9 +315,9 @@ public class Main {
 }
 
 # Output -- 8  (0, 1, 1, 2, 3, 5, 8)
-
-#Solution --7
-
+```
+# Solution --7
+```
 public class Main {
     static int fun(int n) {
         if (n <= 1)
@@ -331,9 +330,9 @@ public class Main {
 }
 
 # Output -- 16
-
-#Solution --8
-
+```
+# Solution --8
+```
 public class Main {
     static int count = 0;
     static void fun(int n) {
@@ -350,9 +349,9 @@ public class Main {
 }
 
 Output --15
-
-#Solution --9
-
+```
+# Solution --9
+```
 public class Main {
     static int sumDigits(int n) {
         if (n == 0)
@@ -365,9 +364,9 @@ public class Main {
 }
 
 Output --10
-
-#Solution --10
-
+```
+# Solution --10
+```
 public class Main {
     static void reversePrint(int n) {
         if (n == 0)
@@ -381,7 +380,7 @@ public class Main {
 }
 
 Output --3,2,1
-
+```
 
 
 
