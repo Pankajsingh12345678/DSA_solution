@@ -1,7 +1,7 @@
 # DSA_solution
 
 ### Solution--1 
-
+```
 public class Question1 {
     public static void main(String[] args) {
         int x = 5, y = 3, z;
@@ -18,6 +18,7 @@ public class Question1 {
     }
 }
 #Output-- (b) 1
+```
 
 
 #Solution--2
@@ -584,7 +585,7 @@ public class Main {
         int x = 2;
         class Inner {
             void printX() {
-                System.out.println(x); // Output: 2
+                System.out.println(x); 
             }
         }
         Inner inner = new Inner();
@@ -595,7 +596,7 @@ public class Main {
         outer();
     }
 }
-
+Output: 2
 ```
 ### Q30. Output?
 x = 10
@@ -609,9 +610,9 @@ public class Main {
     static int x = 10;
 
     public static void show() {
-        // System.out.println(x); // Error: cannot reference x before initialization
+        
         int x = 20;
-        System.out.println(x); // If we remove line above, this prints 20
+        System.out.println(x); 
     }
 
     public static void main(String[] args) {
