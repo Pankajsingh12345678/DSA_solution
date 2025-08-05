@@ -19,6 +19,7 @@ public class Question1 {
 }
 Output-- (b) 1
 
+
 #Solution--2
 ```
 public class Question2 {
