@@ -384,5 +384,243 @@ Output --3,2,1
 ```
 
 
+## SET--(2)
+
+### Q21. What is printed?
+function modify(x)
+ x = x + 10
+ return x
+a = 5
+modify(a)
+print(a)
+### Solution
+```
+public class Main {
+    public static int modify(int x) {
+        x = x + 10;
+        return x;
+    }
+
+    public static void main(String[] args) {
+        int a = 5;
+        modify(a);
+        System.out.println(a); 
+    }
+}
+Output: 5
+```
+
+### Q22. Output?
+function update(arr, i)
+ arr[i] = arr[i] + 5
+arr = [1, 2, 3]
+update(arr, 1)
+print(arr[1])
+### Solution
+```
+public class Main {
+    public static void update(int[] arr, int i) {
+        arr[i] = arr[i] + 5;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3};
+        update(arr, 1);
+        System.out.println(arr[1]); 
+    }
+}
+Output: 7
+
+```
+### Q23. Output of the code:
+x = 100
+function check()
+ x = 50
+ print(x)
+check()
+print(x)
+### Solution
+```
+public class Main {
+    static int x = 100;
+
+    public static void check() {
+        int x = 50;
+        System.out.println(x); // 50
+    }
+
+    public static void main(String[] args) {
+        check();
+        System.out.println(x); 
+    }
+}
+Output: 100
+
+```
+### Q24. What will be the output?
+a = 10
+function test()
+ global a
+ a = a + 5
+test()
+print(a)
+### Solution
+```
+public class Main {
+    static int a = 10;
+
+    public static void test() {
+        a = a + 5;
+    }
+
+    public static void main(String[] args) {
+        test();
+        System.out.println(a); 
+    }
+}
+Output: 15
+```
+### Q25. Trace the output:
+function modify(x)
+ x = x * 2
+ return x
+x = 4
+x = modify(x)
+print(x)
+### Solution
+```
+public class Main {
+    public static int modify(int x) {
+        return x * 2;
+    }
+
+    public static void main(String[] args) {
+        int x = 4;
+        x = modify(x);
+        System.out.println(x); 
+    }
+}
+ Output: 8
+```
+### Q26. What is printed?
+x = 5
+function demo(x)
+ x = x + 1
+ print(x)
+demo(x)
+print(x)
+### Solution
+```
+public class Main {
+    public static void demo(int x) {
+        x = x + 1;
+        System.out.println(x); // 6
+    }
+
+    public static void main(String[] args) {
+        int x = 5;
+        demo(x);
+        System.out.println(x); 
+    }
+}
+Output: 5
+```
+### Q27. Predict the output:
+function add(val)
+ val = val + 10
+a = 3
+add(a)
+print(a)
+### Solution
+```
+public class Main {
+    public static void add(int val) {
+        val = val + 10;
+    }
+
+    public static void main(String[] args) {
+        int a = 3;
+        add(a);
+        System.out.println(a); 
+    }
+}
+Output: 3
+```
+### Q28. What will be the output?
+function fun(x)
+ y = x + 10
+ return y
+y = 5
+z = fun(y)
+print(y, z)
+### Solution
+```
+public class Main {
+    public static int fun(int x) {
+        int y = x + 10;
+        return y;
+    }
+
+    public static void main(String[] args) {
+        int y = 5;
+        int z = fun(y);
+        System.out.println(y + " " + z); 
+    }
+}
+Output: 5 15
+```
+### Q29. Scope analysis – What’s printed?
+x = 1
+function outer()
+ x = 2
+ function inner()
+ print(x)
+ inner()
+outer()
+### Solution
+```
+public class Main {
+    public static void outer() {
+        int x = 2;
+        class Inner {
+            void printX() {
+                System.out.println(x); // Output: 2
+            }
+        }
+        Inner inner = new Inner();
+        inner.printX();
+    }
+
+    public static void main(String[] args) {
+        outer();
+    }
+}
+
+```
+### Q30. Output?
+x = 10
+function show()
+ print(x)
+ x = 20
+show()
+### Solution
+```
+public class Main {
+    static int x = 10;
+
+    public static void show() {
+        // System.out.println(x); // Error: cannot reference x before initialization
+        int x = 20;
+        System.out.println(x); // If we remove line above, this prints 20
+    }
+
+    public static void main(String[] args) {
+        show();
+    }
+}
+
+```
+
+
 
 
