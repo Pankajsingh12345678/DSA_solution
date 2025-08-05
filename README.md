@@ -1,6 +1,5 @@
 # DSA_solution
 
-
 ### Solution--1 
 
 public class Question1 {
