@@ -17,7 +17,7 @@ public class Question1 {
         System.out.println(z); 
     }
 }
-Output-- (b) 1
+#Output-- (b) 1
 
 
 #Solution--2
