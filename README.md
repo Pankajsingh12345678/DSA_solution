@@ -621,6 +621,43 @@ public class Main {
 }
 
 ```
+### Recursive power function
+### Solution
+```
+public class Main {
+    public static int power(int base, int exp) {
+        if (exp == 0) return 1;
+        return base * power(base, exp - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(power(2, 5));
+    }
+}
+Output: 32
+```
+### Q.Print pattern using recursion
+### Solution
+```
+public class Main {
+    public static void pattern(int n) {
+        if (n == 0) return;  
+        pattern(n - 1);      
+        for (int i = 0; i < n; i++)
+            System.out.print("*");
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        pattern(4);  
+    }
+}
+Output:
+*
+**
+***
+****
+```
+
 
 
 
